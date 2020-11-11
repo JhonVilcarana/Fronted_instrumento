@@ -1,0 +1,21 @@
+<div class="center">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Modificar</mat-card-title>
+          <mat-card-subtitle>Instrumentos</mat-card-subtitle>
+        </mat-card-header>
+  
+        <mat-card-content>
+            <mat-form-field appearance="outline">
+                <mat-label>Instrumento</mat-label>
+                <input matInput [(ngModel)]="instrumento.nombre" placeholder="Ingresar Instrumento">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="modificarInstrumento()">Modificar</button>
+            <a mat-raised-button routerLink="/listar" color="warn">Cancelar</a>
+        </mat-card-actions>
+      </mat-card>
+</div>
